@@ -12,11 +12,11 @@ const topicsSlice = createSlice({
             //                                             name: 'more bla'
             //                                             icon: 'url icon'
             //                                         }
-            const { id, name, iconUrl } = action.payload;
+            const { id, name, icon } = action.payload;
             state.topics[id] = {
                 id      : id,
                 name    : name,
-                icon    : iconUrl,
+                icon    : icon,
                 quizIds : []
             };
         }
